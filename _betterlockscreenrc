@@ -15,4 +15,5 @@ datecolor=ffffffff
 loginbox=00000066
 font="sans-serif"
 locktext='Type password to unlock...'
-lock_timeout=5
+lock_timeout=15
+wallpaper_cmd="feh --bg-fill ~/Pictures/Wallpaper/catinjapan.jpg"
