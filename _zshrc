@@ -55,6 +55,7 @@ export GPG_TTY=$(tty)
 export TERMINAL="termite"
 export PATH=~/code/istio/bin:~/.local/bin:~/bin:"$PATH"
 export LEDGER_FILE=~/finance/2021.journal
+export NVM_DIR="$HOME/.nvm"
 export HISTFILE=~/.zsh_history
 export HISTSIZE=1000000000
 export SAVEHIST=${HISTSIZE}
@@ -74,10 +75,11 @@ if [[ $TERM == xterm-termite ]]; then
 fi
 
 # initialize nvm
-#export NVM_DIR="$HOME/.nvm"
-#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-#[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-source /usr/share/nvm/init-nvm.sh
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# initialize ghcup
+[ -f "/home/samantha/.ghcup/env" ] && . "/home/samantha/.ghcup/env"
 
 # load pkgfile command not found script
 source /usr/share/doc/pkgfile/command-not-found.zsh
