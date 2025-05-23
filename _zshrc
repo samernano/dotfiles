@@ -1,4 +1,4 @@
-# source antigen and apply plugins. zsh-syntax-highlighting must be the last plugin sourced.
+# source antigen and apply plugins.
 source ~/.zsh/antigen/antigen.zsh
 antigen bundle ael-code/zsh-colored-man-pages
 antigen bundle zsh-users/zsh-history-substring-search
@@ -59,11 +59,6 @@ export HISTSIZE=1000000000
 export SAVEHIST=${HISTSIZE}
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 export LEDGER_FILE="/home/samantha/repos/accounting-ledger/all.journal"
-
-# import cholorscheme from 'wal' asynchronously
-# & run the process in the background
-# ( ) # Hide shell job control messages.
-(cat $HOME/.cache/wal/sequences &)
 
 # import wal colorscheme to ttys
 source $HOME/.cache/wal/colors-tty.sh
