@@ -198,6 +198,7 @@ for_window [class="^.*"] border pixel 4
 for_window [class=".*"] title_format "  %title"
 
 # start up
+exec_always --no-startup-id feh --bg-fill ~/Pictures/Wallpaper/catinjapan.jpg
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id picom -b
 
