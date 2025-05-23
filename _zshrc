@@ -48,6 +48,7 @@ setopt COMPLETE_ALIASES
 bindkey -v
 
 # environment variables
+export XDG_SESSION_TYPE="X11"
 export BROWSER="firefox"
 export EDITOR="nvim"
 export GPG_TTY=$(tty)
@@ -116,6 +117,8 @@ alias vimrc="v ~/.vimrc"
 alias i3rc="v ~/.config/i3/config"
 alias uncommit='reset HEAD~'
 alias grep-ri='grep -Ri --exclude-dir=node_modules'
+alias grr='grep -R --exclude-dir=node_modules'
+alias mtm='ffmpeg -i'
 
 # Kubectl shortcuts
 alias kl='kubectl logs'
@@ -124,11 +127,6 @@ alias ks='kubectl get services'
 alias wkd='watch kubectl get deployments'
 alias wkp='watch kubectl get pods'
 alias wks='watch kubectl get services'
-
-# Docker stuff
-# Clear Docker cache
-alias dprune='docker system prune --all'
-
 
 # Keybindings
 # Bind Ctrl-R to History Search
