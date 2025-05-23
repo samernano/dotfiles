@@ -58,6 +58,7 @@ export HISTFILE=~/.zsh_history
 export HISTSIZE=1000000000
 export SAVEHIST=${HISTSIZE}
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
+export LEDGER_FILE="/home/samantha/repos/accounting-ledger/all.journal"
 
 # import cholorscheme from 'wal' asynchronously
 # & run the process in the background
@@ -87,6 +88,8 @@ source /usr/share/doc/pkgfile/command-not-found.zsh
 
 # aliases
 alias am='alsamixer'
+alias bs='hledger bs'
+alias bsc='hledger bs -C'
 alias mv='mv -iv'
 alias rm='rm -Iv'
 alias cp='cp -iv'
