@@ -53,6 +53,8 @@ set encoding=UTF-8
 set signcolumn=yes
 set cursorline
 set colorcolumn=78
+set clipboard+=unnamedplus
+set exrc
 
 " a plugin
 source ~/.vim/plugin/matchit.vim
