@@ -18,6 +18,7 @@ Plug 'hail2u/vim-css3-syntax'
 Plug 'ledger/vim-ledger'
 Plug 'preservim/nerdtree'
 Plug 'tpope/vim-fugitive'
+Plug 'rareitems/printer.nvim'
 " Order of these JS plugins matters
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
