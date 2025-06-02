@@ -13,6 +13,7 @@ Plug 'Raimondi/delimitMate'
 Plug 'w0rp/ale'
 Plug 'neoclide/coc.nvim'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'ledger/vim-ledger'
 Plug 'preservim/nerdtree'
@@ -99,12 +100,10 @@ set shortmess+=c
 " Limit autocomplete items to 8
 set pumheight=8 
 
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-function! s:check_back_space() abort
+" Indent stuff
+highlight IndentBlanklineChar guifg=#232323
+
+function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
