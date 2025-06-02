@@ -28,7 +28,7 @@ Plug 'ryanoasis/vim-devicons'
 call plug#end()             " required
 filetype plugin indent on   " required
 
-" apply jellybeans as colorscheme
+" apply colorscheme
 set termguicolors
 colorscheme jellybeans
 let g:jellybeans_overrides = {
@@ -92,9 +92,7 @@ nnoremap <leader>P "+P
 " <leader>q to close current pane
 nnoremap <leader>q :q<CR>
 
-
 """ coc.nvim stuff
-
 set hidden
 set shortmess+=c
 
@@ -143,7 +141,6 @@ endfunction
 
 " Hover over a symbol to show it's type at bottom of window
 autocmd CursorHold * silent call CocActionAsync('highlight')
-
 
 " ale stuff
 let g:ale_open_list = 1
