@@ -2,7 +2,7 @@
     ~/.cache/wal/colors-tty.sh:
       create: true
       path: _colors-tty.sh
-    ~/.config/betterlockscreenrc:
+    ~/.config/betterlockscreen/betterlockscreenrc:
       create: true
       path: _betterlockscreenrc
     ~/.config/cava:
